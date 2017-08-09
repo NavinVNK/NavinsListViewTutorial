@@ -24,8 +24,9 @@ public class MainActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // use your custom layout
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                R.layout.item_row, R.id.label, bond_films);
+       // ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        //        R.layout.item_row, R.id.label, bond_films);
+        MyarrayAdapter adapter = new MyarrayAdapter(this, bond_films);
         setListAdapter(adapter);
       //  setListAdapter(new ArrayAdapter<String>(this,
       //          android.R.layout.simple_list_item_1, bond_films));
